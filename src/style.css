@@ -79,6 +79,27 @@
     after:bg-white
     after:rounded-2xl;
   }
+  .common-titel {
+    @apply text-3xl sm:text-[56px] font-extrabold leading-[120%] text-dmt-black1
+  }
+  .common-paragraph{
+    @apply mt-4 text-sm sm:text-lg font-normal max-w-202.25 mx-auto text-dmt-black2 leading-[150%] mb-8
+  }
+  .faq-details {
+    @apply bg-dmt-blue3 justify-between rounded-2xl p-6 shadow-[inset_0_0_0_2px_var(--dmt-blue2)] open:border open:border-dmt-blue1 transition-all duration-400;
+  }
+  .faq-summary {
+    @apply cursor-pointer w-full flex justify-between font-semibold text-left font-roboto text-lg leading-[150%]
+  }
+  .faq-paragraph {
+    @apply mt-4 text-dmt-black2 leading-[150%] font-roboto font-normal text-lg;
+  }
+  .faq-plus {
+    @apply absolute inset-0 w-5 h-5 group-open:hidden
+  }
+  .faq-minus {
+    @apply absolute inset-0 hidden group-open:block 
+  }
 
     @keyframes rotateBorder {
       from {
@@ -113,9 +134,7 @@
          xl:text-start;
   }
     /* FAQ Accordion */
-  .faq-item {
-    @apply bg-[#f8fbff] rounded-[14px] px-5.5 py-4.5 border border-[#e0eaff] w-[872px];
-  }
+
 
   .faq-btn {
     @apply w-full flex justify-between items-center font-semibold;
