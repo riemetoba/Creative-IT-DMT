@@ -2,6 +2,7 @@
 
 @theme {
   --default-font-family: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
   --color-dmt-black1: #1e1e1f;
   --color-dmt-black2: #38435c;
   --color-dmt-brand1-lg1: #ff8079;
@@ -32,11 +33,13 @@
 
 @layer components {
   .btn {
-    @apply py-3 sm:py-2.5 items-center md:text-base text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[120%] rounded-[10px] cursor-pointer;
+    @apply py-3 sm:py-2.5 items-center md:text-base text-sm bg-dmt-blue1 text-white font-semibold leading-[150%] rounded-[10px] cursor-pointer;
   }
-  .banner-label {
-    @apply flex items-center gap-2 px-3 py-2 text-sm font-normal border rounded-[10px] transition-all duration-200 leading-[120%];
-  }
+.banner-label {
+  @apply w-29 font-roboto flex items-center justify-center gap-2 
+         px-3 py-[9.5px] text-sm font-normal 
+         border rounded-xl leading-[120%] whitespace-nowrap;
+}
 
   .form-label {
     @apply block text-xs font-medium text-dmt-black1 mb-2;
