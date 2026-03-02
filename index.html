@@ -89,7 +89,7 @@
   class="relative bg-cover bg-center bg-no-repeat sm:pt-35.5"
   style="background-image: url('./src/assets/images/hero/hero-bg.png');"
 >
-  <div class="container pt-20 sm:pt-0 pb-10 lg:pb-35.25">
+  <div class="container pt-20 sm:pt-0">
     
     <div class="grid lg:grid-cols-2 gap-16.5 items-center">
 
@@ -231,10 +231,10 @@
   </section>
   <!-- hero part end/ayesha -->
   <!-- Section-3 Start : Promotion Video/saima -->
-  <section id="promotion-video" class="relative flex flex-col items-center justify-center pb-5 sm:pb-20 lg:pb-35">
+  <section id="promotion-video" class="relative flex flex-col items-center justify-center py-10 sm:py-20 lg:pt-35.25 lg:pb-35">
     <!-- Background Start -->
 
-    <div class="hidden absolute inset-0 z-0 sm:flex items-center justify-center pointer-events-none -mt-26.5">
+    <div class="hidden absolute inset-0 z-0 sm:flex items-center justify-center pointer-events-none mt-[56.34px]">
       <img src="src/assets/images/promo-video/promo-bg.png" class="" alt="Green Ellipse Background" />
     </div>
 
@@ -244,7 +244,7 @@
       <!-- Video Header Start -->
 
       <header class="md:w-150 md:mx-auto lg:w-4xl text-center mb-10">
-        <h1 class="common-titel text-dmt-black1">Here Will Be <span class="text-dmt-blue1 italic">Promotion Video</span></h1>
+        <h1 class="common-titel text-dmt-black1">Here Will Be <span class="text-dmt-blue1 ml-4 italic">Promotion Video</span></h1>
         <p class="common-paragraph">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
           est at non. Felis posuere <br />
@@ -310,16 +310,19 @@
   <!-- Section-3 End : Promotion Video/saima -->
 
   <!-- Section-4 Start : Course Module/saima -->
-  <section id="course-module" class="relative items-center justify-center py-10 lg:pb-35 px-6  bg-center bg-cover bg-no-repeat" style="background-image: url('./src/assets/images/course-module/module-bg.png');">
+  <section id="course-module" class="relative items-center justify-center py-10 lg:pb-35 px-6 sm:px-0  pt-10 sm:pt-26.25">
+    <div class="mx-auto w-full max-w-400 absolute left-0 right-0 -z-50 top-0">
+      <img src="./src/assets/images/course-module/module-bg.png" alt="">
+    </div>
 
 
-    <div class="container pt-10 sm:pt-26.25">
+    <div class="container">
 
     <!-- Module Header Start -->
 
-    <header class="md:w-150 md:mx-auto lg:w-4xl text-center mb-10">
-      <h1 class="text-4xl lg:text-5xl xl:text-[56px] font-extrabold mb-6 text-dmt-blue1 italic">Course Module</h1>
-      <p class="max-w-4xl mx-auto text-dmt-black2 text-sm xl:text-[18px]">
+    <header class="md:w-150 md:mx-auto lg:w-4xl text-center">
+      <h1 class="common-titel">Here will be <span class="text-dmt-blue1 ml-4 italic"> Course Module</span></h1>
+      <p class="common-paragraph">
         Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non. Felis posuere <br /> maecenas
         interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
       </p>
@@ -328,156 +331,196 @@
     <!-- Module Header End -->
 
     <!-- Module List Start -->
-      
-    <div class="max-w-285 md:w-150 lg:w-180 xl:w-285 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-      
-      <div class="border border-dmt-blue1 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300" open>
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-blue2">
-              <img src="src/assets/images/course-module/module-icon-blue.svg" alt="Icon" width="31" height="32">
+
+    <div class="md:w-150 lg:w-180 xl:w-285 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- left-modules -->
+       <div class="space-y-6">
+        <!-- module-l-1  -->
+         <details name="left-modules" class="course-module-div group border-dmt-blue1">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <div class="course-modul-img bg-dmt-blue2">
+                <img src="./src/assets/images/course-module/module-icon-blue.svg" width="31" height="32">
+              </div>
+              <h3 class="course-module-title">
+                Module title will be here
+              </h3>
             </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
+
+            <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="course-module-para mt-4">
+            Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
           </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
+        </details>
+        <!-- module-l-2 -->
+         <details name="left-modules" class="course-module-div group border-dmt-yellow1">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <div class="course-modul-img bg-dmt-yellow2">
+          <img src="./src/assets/images/course-module/module-icon-yellow.svg" width="31" height="32">
         </div>
-        <div class="px-5 pb-6 text-dmt-black2 text-[14px]">
-          Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit
-          nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium
-          ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
-        </div>
+        <h3 class="course-module-title">
+          Module title will be here
+        </h3>
       </div>
 
-      <div class="group border border-dmt-brand2 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300" open>
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-brand3">
-              <img src="src/assets/images/course-module/module-icon-brand.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-        <div class="px-5 pb-6 text-dmt-black2 text-[14px]">
-          Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit
-          nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium
-          ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et.
-        </div>
-      </div>
+      <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
 
-      <div class="group border border-dmt-yellow1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-yellow2">
-              <img src="src/assets/images/course-module/module-icon-yellow.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </div>
-
-      <div class="group border border-dmt-green1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-green2">
-              <img src="src/assets/images/course-module/module-icon-green.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </div>
-
-      <div class="group border border-dmt-blue1 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300">
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-blue2">
-              <img src="src/assets/images/course-module/module-icon-blue.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </div>
-
-      <div class="group border border-dmt-brand2 rounded-2xl bg-white overflow-hidden transition-all duration-300">
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-brand3">
-              <img src="src/assets/images/course-module/module-icon-brand.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </div>
-
-      <div class="group border border-dmt-yellow1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
-        <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-yellow2">
-              <img src="src/assets/images/course-module/module-icon-yellow.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </summary>
-      </div>
-
-      <div class="group border border-dmt-green1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
-        <div class="flex items-center justify-between p-5 cursor-pointer list-none">
-          <div class="flex items-center gap-2 md:gap-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-green2">
-              <img src="src/assets/images/course-module/module-icon-green.svg" alt="Icon" width="31" height="32">
-            </div>
-            <h3 class="font-bold text-dmt-black1 text-[16px] lg:text-lg">Module title</h3>
-          </div>
-          <svg class="chevron w-8 h-8 text-dmt-gray2 transition-transform duration-300" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </div>
-
-      
-      
+    <div class="course-module-para mt-4">
+      Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
     </div>
+  </details>
+<!-- module-l-3 -->
+      <details name="left-modules" class="course-module-div group border-dmt-blue1">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <div class="course-modul-img bg-dmt-blue2">
+                <img src="./src/assets/images/course-module/module-icon-blue.svg" width="31" height="32">
+              </div>
+              <h3 class="course-module-title">
+                Module title will be here
+              </h3>
+            </div>
+
+            <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="course-module-para mt-4">
+            Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
+          </div>
+        </details>
+        <!-- module-l-4 -->
+         <details name="left-modules" class="course-module-div group border-dmt-yellow1">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <div class="course-module-img bg-dmt-yellow2">
+                <img src="./src/assets/images/course-module/module-icon-yellow.svg" width="31" height="32">
+              </div>
+              <h3 class="course-module-title">
+                Module title will be here
+              </h3>
+            </div>
+            <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="course-module-para mt-4">
+            Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
+          </div>
+        </details>
+      </div>
+
+      <!-- right-modules -->
+       <div class="space-y-6">
+<!-- module-r-1 -->
+  <details name="right-modules" class="course-module-div group border-dmt-brand2">
+    <summary class="flex items-center justify-between cursor-pointer">
+      <div class="flex items-center gap-2">
+        <div class="course-modul-img bg-dmt-brand3">
+          <img src="src/assets/images/course-module/module-icon-brand.svg" width="31" height="32">
+        </div>
+        <h3 class="course-module-title">
+          Module title will be here
+        </h3>
+      </div>
+
+      <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="course-module-para mt-4">
+      Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
+    </div>
+  </details>
+  <!-- module-r-2 -->
+    <details name="right-modules" class="course-module-div group border-dmt-green1">
+    <summary class="flex items-center justify-between cursor-pointer">
+      <div class="flex items-center gap-2">
+        <div class="course-modul-img bg-dmt-green2">
+          <img src="src/assets/images/course-module/module-icon-green.svg" width="31" height="32">
+        </div>
+        <h3 class="course-module-title">
+          Module title will be here
+        </h3>
+      </div>
+
+      <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="course-module-para mt-4">
+      Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
+    </div>
+  </details>
+  <!-- module-r-3 -->
+    <details name="right-modules" class="course-module-div group border-dmt-brand2">
+    <summary class="flex items-center justify-between cursor-pointer">
+      <div class="flex items-center gap-2">
+        <div class="course-modul-img bg-dmt-brand3">
+          <img src="src/assets/images/course-module/module-icon-brand.svg" width="31" height="32">
+        </div>
+        <h3 class="course-module-title">
+          Module title will be here
+        </h3>
+      </div>
+
+      <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="course-module-para mt-4">
+      Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
+    </div>
+  </details>
+  <!-- module-r-4 -->
+    <details name="right-modules" class="course-module-div group border-dmt-green1">
+    <summary class="flex items-center justify-between cursor-pointer">
+      <div class="flex items-center gap-2">
+        <div class="course-modul-img bg-dmt-green2">
+          <img src="src/assets/images/course-module/module-icon-green.svg" width="31" height="32">
+        </div>
+        <h3 class="course-module-title">
+          Module title will be here
+        </h3>
+      </div>
+
+      <svg class="course-modul-chevron transition-transform duration-300 group-open:rotate-180"
+           fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="course-module-para mt-4">
+      Lorem ipsum dolor sit amet consectetur. Est lectus eu turpis adipiscing sed mauris sapien. Lacus tempus nec sit nec facilisis velit. Et egestas arcu nibh in pulvinar sit. Ullamcorper turpis laoreet in ultricies at pretium ullamcorper aliquet lobortis. Facilisi felis eget cras in vitae. Semper ut nisl faucibus mattis est et. 
+    </div>
+  </details>
+</div>
 
     <!-- Module List End -->
-
+    </div>
+    
     <!-- Button Start -->
-    <button class="btn px-3 mt-6 flex mx-auto">
+    <button class="btn px-4 py-4.25 flex items-center justify-center mx-auto text-lg leading-[120%]">
       Load More
-      <span class="ml-1">
+      <span class="ml-2">
         <img src="./src/assets/images/course-module/chevron-down.svg" alt="">
       </span>
     </button>
-
     <!-- Button End -->
-
-    </div>
     
   </section>
   <!-- Section-4 End : Course Module/saima -->
