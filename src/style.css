@@ -80,7 +80,7 @@
     after:bg-white
     after:rounded-2xl;
   }
-  .common-titel {
+  .common-title {
     @apply text-3xl lg:text-5xl xl:text-[56px] font-extrabold leading-[120%] text-dmt-black1 capitalize
   }
   .common-paragraph{
