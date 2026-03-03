@@ -28,10 +28,10 @@
 @layer base {
   .container {
     @apply max-w-285! mx-auto;
-    @variant lg{
-      padding : 0 10px;
-    }
-    
+  }
+  ul, ol {
+    @apply list-none;
+    padding-left: 0;
   }
 }
 
@@ -88,7 +88,7 @@
     @apply text-3xl lg:text-5xl xl:text-[56px] font-extrabold leading-[120%] text-dmt-black1 capitalize
   }
   .common-paragraph{
-    @apply mt-4 text-sm sm:text-lg font-normal max-w-202.25 mx-auto text-dmt-black2 leading-[150%] mb-8 font-roboto
+    @apply mt-4 text-base lg:text-lg font-normal max-w-202.25 mx-auto text-dmt-black2 leading-[150%] mb-8 font-roboto
   }
   /* promotional-video */
   .promotion-video-article {
@@ -101,7 +101,6 @@
   .course-module-div {
     @apply p-4 border-[0.5px] rounded-[10px] bg-white overflow-hidden transition-all duration-300
   }
-
   .course-module-img {
     @apply w-10 h-10 flex items-center justify-center rounded-[10px]
   }
@@ -113,6 +112,16 @@
   }
   .course-modul-chevron {
     @apply w-8 h-8 text-dmt-gray2
+  }
+  /* journey */
+  .journey-card-number {
+    @apply text-2xl md:text-3xl font-bold rounded-[10px] py-1 px-5
+  }
+  .journey-card-heading {
+    @apply text-[20px] md:text-xl font-semibold text-dmt-black1 mb-3
+  }
+  .journey-card-paragraph {
+    @apply text-dmt-gray1 text-sm leading-[150%] font-normal
   }
   /* students-stories */
   /* CARD STYLE */
@@ -127,28 +136,29 @@
          sm:grid-cols-2
          lg:grid-cols-1
          xl:grid-cols-2
-
          place-items-center
          sm:place-items-start
          lg:place-items-center
          xl:place-items-start
-
          text-center
          sm:text-start
          lg:text-center
          xl:text-start;
   }
+  .students-stories-img {
+
+  }
   .students-stories-rate {
     @apply text-xl font-semibold text-dmt-black1
   }
   .students-stories-details {
-    @apply md:w-81.5 text-sm text-dmt-black2 leading-[150%] pt-2.5 font-normal
+    @apply text-sm text-dmt-black2 leading-[150%] pt-2.5 font-normal
   }
   .students-stories-name{
-    @apply text-xl font-semibold text-dmt-black1 mt-8 leading-[150%]
+    @apply text-xl font-semibold text-dmt-black1 sm:mt-8 leading-[150%]
   }
   .students-stories-batch {
-    @apply text-sm leading-[150%] font-normal
+    @apply text-sm leading-[150%] font-normal text-dmt-black2
   }
   /* faq */
   .faq-details {
@@ -169,7 +179,7 @@
   /* footer  */
       .footer-bg {
     @apply bg-[#0B2440] rounded-t-[20px] md:rounded-t-[40px]
-    lg:rounded-t-[80px] xl:rounded-t-[100px] text-white mt-35 pt-8 lg:pt-16 pb-10
+    lg:rounded-t-[80px] xl:rounded-t-[100px] text-white mt-10 lg:mt-35 pt-8 lg:pt-16 pb-10
   }
   .footer-heading {
     @apply font-medium sm:font-semibold text-sm sm:text-base leading-[150%] font-roboto text-center
@@ -178,4 +188,10 @@
     @apply text-[12px] sm:text-base font-normal leading-[120%] font-roboto
   }
 
+  .title{
+    @apply text-3xl lg:text-5xl xl:text-[56px] font-extrabold mb-4 text-dmt-black1 leading-[120%];
+  }
+  .paragraph{
+    @apply mx-auto px-2 font-roboto text-dmt-black2 text-sm xl:text-[18px] leading-[150%];
+  }
 }
