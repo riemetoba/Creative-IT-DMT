@@ -146,7 +146,7 @@
          xl:text-start;
   }
   .students-stories-card {
-    @apply bg-dmt-yellow2 flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start rounded-[20px] overflow-hidden p-2 xl:p-4
+    @apply  flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start rounded-[20px] overflow-hidden p-2 xl:p-4
   }
   .students-stories-rate {
     @apply text-xl font-semibold text-dmt-black1
